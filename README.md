@@ -1,4 +1,6 @@
-# Windows Registry Script (.reg) Language package for Visual Studio Code
+# REG for Visual Studio Code
+
+Windows Registry Script (.reg) Language package for Visual Studio Code
 
 <img src="https://raw.githubusercontent.com/ionutvmi/reg-vscode/master/screenshots/reg.png" alt="screenshot" />
 
