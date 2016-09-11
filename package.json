@@ -1,0 +1,26 @@
+{
+    "name": "reg",
+    "displayName": "REG",
+    "description": "Windows Registry Script (.reg) Language package for VSCode",
+    "version": "0.0.1",
+    "publisher": "ionutvmi",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "reg",
+            "aliases": ["REG", "reg"],
+            "extensions": [".reg",".REG"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "reg",
+            "scopeName": "source.reg",
+            "path": "./syntaxes/reg.tmLanguage"
+        }]
+    }
+}
