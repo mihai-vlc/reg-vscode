@@ -4,6 +4,7 @@
     "description": "Windows Registry Script (.reg) Language package for VSCode",
     "version": "0.0.1",
     "publisher": "ionutvmi",
+    "icon": "icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/ionutvmi/reg-vscode"
