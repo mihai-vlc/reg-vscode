@@ -2,7 +2,7 @@
     "name": "reg",
     "displayName": "REG",
     "description": "Windows Registry Script (.reg) Language package for VSCode",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "publisher": "ionutvmi",
     "icon": "icon.png",
     "repository": {
@@ -17,19 +17,56 @@
         "vscode": "^1.0.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "reg",
-            "aliases": ["REG", "reg"],
-            "extensions": [".reg",".REG"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "reg",
-            "scopeName": "source.reg",
-            "path": "./syntaxes/reg.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "reg",
+                "aliases": [
+                    "REG",
+                    "reg"
+                ],
+                "extensions": [
+                    ".reg",
+                    ".REG"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "reg",
+                "scopeName": "source.reg",
+                "path": "./syntaxes/reg.tmLanguage"
+            }
+        ],
+        "commands": [
+            {
+                "command": "extension.reg.jumpToKey",
+                "title": "REG: Jump to registry key"
+            }
+        ]
+    },
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^3.3.1",
+        "vscode": "^1.1.28",
+        "tslint": "^5.12.1",
+        "@types/node": "^10.12.21",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "sudo-prompt": "^9.0.0"
     }
 }
