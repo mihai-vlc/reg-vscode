@@ -32,8 +32,6 @@ function jumpToRegKey(textEditor: vscode.TextEditor, edit: vscode.TextEditorEdit
                     vscode.window.showErrorMessage(`RegJump faild, ${err}`);
                     return;
                 }
-
-                vscode.window.showInformationMessage("RegJump open command executed successfully !");
             });
         }
     });
