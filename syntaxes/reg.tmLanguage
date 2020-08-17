@@ -229,7 +229,7 @@
 
 			</dict>
 			<key>match</key>
-			<string>^(\s*(["']?)(.+?)(["']?)\s*(=))?\s*((-)|((["'])(.*?)(["']))|(((?i:dword))(\:)([\dabcdefABCDEF]{8}))|(((?i:hex))((\()([\d]*)(\)))?(\:)(.*?)(\\?)))\s*(;.*)?$</string>
+			<string>^(\s*(["']?)(.+?)(["']?)\s*(=))?\s*((-)|((["'])(.*?)(["']))|(((?i:dword))(\:)\s*([\dabcdefABCDEF]{1,8}))|(((?i:hex))((\()([\d]*)(\)))?(\:)(.*?)(\\?)))\s*(;.*)?$</string>
 			<key>name</key>
 			<string>meta.declaration.reg</string>
 		</dict>
