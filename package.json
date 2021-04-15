@@ -2,7 +2,7 @@
     "name": "reg",
     "displayName": "REG",
     "description": "Windows Registry Script (.reg) Language package for VSCode",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "ionutvmi",
     "icon": "icon.png",
     "repository": {
