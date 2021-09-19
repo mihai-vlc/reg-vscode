@@ -52,6 +52,7 @@
         "onLanguage:reg"
     ],
     "main": "./out/extension",
+    "commment": "NOTE: there are, in fact, no tests yet.",
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
