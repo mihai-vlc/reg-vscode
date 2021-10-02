@@ -52,6 +52,7 @@
         "onLanguage:reg"
     ],
     "main": "./out/extension",
+    "commment": "NOTE: there are, in fact, no tests yet.",
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
@@ -61,7 +62,7 @@
     },
     "devDependencies": {
         "typescript": "^3.3.1",
-        "vscode": "^1.1.28",
+        "vscode": "^1.1.37",
         "tslint": "^5.12.1",
         "@types/node": "^10.12.21",
         "@types/mocha": "^2.2.42"
