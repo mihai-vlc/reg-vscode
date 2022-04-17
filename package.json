@@ -46,7 +46,11 @@
                 "command": "extension.reg.jumpToKey",
                 "title": "REG: Jump to registry key"
             }
-        ]
+        ],
+        "snippets": [{
+			"language": "reg",
+			"path": "./snippets/snippets.json"
+		}]
     },
     "activationEvents": [
         "onLanguage:reg"
