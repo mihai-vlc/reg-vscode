@@ -7,22 +7,22 @@
     "A HKEY_CURRENT_CONFIG hive": {
         "prefix": "hkey_current_config",
         "description": "Create a section beginning with `HKEY_CURRENT_CONFIG`",
-        "body": "[HKEY_CURRENT_CONFIG\\${1:path}]\n"
+        "body": "[HKEY_CURRENT_CONFIG\\\\${1:path}]\n"
     },
     "A HKEY_CURRENT_USER hive": {
         "prefix": "hkey_current_user",
         "description": "Create a section beginning with `HKEY_CURRENT_USER`",
-        "body": "[HKEY_CURRENT_USER\\${1:path}]\n"
+        "body": "[HKEY_CURRENT_USER\\\\${1:path}]\n"
     },
     "A HKEY_LOCAL_MACHINE hive": {
         "prefix": "hkey_local_machine",
         "description": "Create a section beginning with `HKEY_LOCAL_MACHINE`",
-        "body": "[HKEY_LOCAL_MACHINE\\${1:path}]\n"
+        "body": "[HKEY_LOCAL_MACHINE\\\\${1:path}]\n"
     },
     "A HKEY_USERS hive": {
         "prefix": "hkey_users",
         "description": "Create a section beginning with `HKEY_USERS`",
-        "body": "[HKEY_USERS\\${1:path}]\n"
+        "body": "[HKEY_USERS\\\\${1:path}]\n"
     },
     "A key-value pair": {
         "prefix": "key",
